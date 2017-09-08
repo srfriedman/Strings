@@ -6,6 +6,7 @@
 
 import turtle
 
+
 def createLSystem(numIters, axiom):
     startString = axiom
     endString = ""
@@ -27,9 +28,9 @@ def processString(oldStr):
 def applyRules(ch):
     newstr = ""
     if ch == 'X':
-        newstr = '#X -> X+YF++YF-FX--FXFX-YF+'   # Rule 1
+        newstr = 'X+YF++YF-FX--FXFX-YF+'   # Rule 1
     elif ch == 'Y':
-        newstr = 'FX+YFYF++YF+FX--FX-Y'
+        newstr = '-FX+YFYF++YF+FX--FX-Y'
     else:
         newstr = ch     # no rules apply so keep the character
 
@@ -49,7 +50,7 @@ def drawLsystem(aTurtle, instructions, angle, distance):
 
 
 def main():
-    inst = createLSystem(4, "X+YF++YF-FX--FXFX-YF+")  # create the string
+    inst = createLSystem(5, "X+YF++YF-FX--FXFX-YF+")  # create the string
     print(inst)
     t = turtle.Turtle()           # create the turtle
     wn = turtle.Screen()
