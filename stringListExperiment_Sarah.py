@@ -2,6 +2,8 @@
 #Sarah Friedman
 #9/8/17
 
+#THIS PROGRAM IS NOT FINISHED, NOR DOES IT WORK
+
 string = ['Mississippi', 'Bookkeeper', 'Deeded', 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum']
 stringCount = len(string)
 
